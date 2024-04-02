@@ -9,9 +9,7 @@
 <body>
     <div class="container">
         <div class="left">
-            <div class="img-container">
-                <img src="img/ian-schneider-0qpPV5nrhwo-unsplash.jpg" alt="Sample Image">
-            </div>
+            <img src="img/ian-schneider-0qpPV5nrhwo-unsplash.jpg" alt="Sample Image">
         </div>
 
         <div class="right">
@@ -20,37 +18,54 @@
                     realize your deepest dreams.<br/>Sign up now to get started
                 </p>
                 <p>
-                    You <span id="emphasis">know</span> you want to.
+                    <br/>You <span id="emphasis">know</span> you want to.
                 </p>
             </div>
 
-            <div class="form-details">
-                <fieldset>
-                    <legend>Let's do this!</legend>
-                    <form action="" method="GET">
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name" name="first-name" placeholder="ex- John" required>
+            <fieldset class="form-details">
+                <legend>Let's do this!</legend>
+                <form class="register" action="" method="GET">
 
-                        <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name" name="last-name" placeholder="ex- Smith" required>
+                    <div class="form-row">
+                        <div class="group-labels">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name" placeholder="ex- John" required>
+                        </div>
                         
-                        <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="email" placeholder="ex- jsmith@example.com" required>
+                        <div class="group-labels">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name" placeholder="ex- Smith" required>
+                        </div>
+                    </div>
 
-                        <label for="number">PHONE NUMBER</label>
-                        <input type="number" id="number" name="number" placeholder="ex- 9821786312" maxlength="10">
+                    <div class="form-row">
+                        <div class="group-labels">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" placeholder="ex- jsmith@example.com" required>
+                        </div>
 
-                        <label for="pwd">PASSWORD</label>
-                        <input type="password" id="pwd" name="pwd" required>
+                        <div class="group-labels">
+                            <label for="number">PHONE NUMBER</label>
+                            <input type="number" id="number" name="number" placeholder="ex- 9821786312" maxlength="10">
+                        </div>
+                    </div>
 
-                        <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm-pwd" name="confirm-pwd" required>
-                    </form>
-                </fieldset>
-            </div>
+                    <div class="form-row">
+                        <div class="group-labels">
+                            <label for="pwd">PASSWORD</label>
+                            <input type="password" id="pwd" name="pwd" required>
+                        </div>
+
+                        <div class="group-labels">
+                            <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-pwd" name="confirm-pwd" required>
+                        </div>
+                    </div>
+                </form>
+            </fieldset>
 
             <div class="form-buttons">
-                <button type="submit">Create Account</button>
+                <button type="submit" class="submit-btn">Create Account</button>
                 <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
